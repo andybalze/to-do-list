@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Todo App
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' media='(max-device-width: 640px)' href='css/style.css'>
+	    <link rel='stylesheet' media='(min-device-width: 640px)' href='css/desktop.css'>
+    </head>
+    <body>
+        <section id="content">
+            <header>
+                <h1 id="title">todo</h1>
+            </header>
+            <div id="taskMenu">
+                <ul id='list'>
+                    <div id='taskToAdd'>
+                        <input type="text" id='input'  tabindex="2" anchor="list"
+                        placeholder="What needs to be done?" autofocus/>
+                    </div>
+                    <foot id='foot'>
+                        <div class="bottom first" id="1" anchor="selections">
+                            <span tabindex="9999" id="amountLeft">
+                                0 Tasks Left
+                            </span>
+                        </div>
+                        <div class="bottom middle" id="2">
+                            <button class="view" tabindex="9999" id="showAll">
+                                All
+                            </button>
+                            <button class="view" tabindex="9999" id="showActive">
+                                Active
+                            </button>
+                            <button class="view" tabindex="9999" id="showComplete">
+                                Complete
+                            </button>
+                        </div>
+                        <div class="bottom last" id="3">
+                            <button class="clear" tabindex="9999" onClick="clear()">
+                                Clear Completed
+                            </button>
+                        </div>
+                    </foot>
+                </ul>
+            </div>
+        </section>
+        <footer id="footer" tabindex="9999">
+            <p>Task designed by Weston Fausett</p>
+        </footer>
+        <button onClick="print()">Print</button>
+        <script type="text/javascript" src="./toDoList.js"></script>
+    </body>
+</html>
